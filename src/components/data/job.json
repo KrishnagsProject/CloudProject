@@ -1,0 +1,54 @@
+[
+    {
+        "companyName":"Google",
+        "role":"Software Engineer Intern",
+        "location":"CA",
+        "status":"Applied",
+        "links":"",
+        "userEmail":"madala.anjala@gmail.com",
+        "modifiedDate":"Sat May 07 2022",
+        "appliedDate":"Sat May 07 2022",
+        "notes":"",
+        "description":"",
+        "id":"92cd030c-ba75-4ac3-9bd0-01edaa0968bb"
+    },
+    {
+        "companyName":"Microsoft",
+        "role":"DevOps Intern",
+        "location":"CA",
+        "status":"Applied",
+        "links":"",
+        "userEmail":"madala.anjala@gmail.com",
+        "modifiedDate":"Sat May 07 2022",
+        "appliedDate":"Sat May 07 2022",
+        "notes":"",
+        "description":"",
+        "id":"6aa48a0f-8e79-49ea-abff-f6b545612786"
+    },
+    {
+        "companyName":"AWS",
+        "role":"Software Developer Engineer Intern",
+        "location":"CA",
+        "status":"Applied",
+        "links":"",
+        "userEmail":"madala.anjala@gmail.com",
+        "modifiedDate":"Sat May 07 2022",
+        "appliedDate":"Sat May 07 2022",
+        "notes":"",
+        "description":"",
+        "id":"8830683e-b2c2-413e-9879-71c98ec71625"
+    },
+    {
+        "companyName":"NetFlix",
+        "role":"Cloud Infrastructure Intern",
+        "location":"CA",
+        "status":"Applied",
+        "links":"",
+        "userEmail":"madala@gmail.com",
+        "modifiedDate":"Sat May 07 2022",
+        "appliedDate":"Sat May 07 2022",
+        "notes":"",
+        "description":"",
+        "id":"62c5791b-51f7-4fc8-9996-b88423bd9907"
+    }
+]

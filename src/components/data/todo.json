@@ -1,0 +1,44 @@
+[
+    {
+        "name":"Apply to new jobs",
+        "checked":"false",
+        "id":"c1cb83ae-d828-4c9e-ad20-38fe43682d1c",
+        "userEmail":"saikrishnaganguri@gmail.com"
+    },
+    {
+        "name":"Submit Documents to Google",
+        "checked":"false",
+        "id":"392a7753-9545-4594-ae32-dc8af1057510",
+        "userEmail":"saikrishnaganguri@gmail.com"
+    },
+    {
+        "name":"Attach Resume to Microsoft",
+        "checked":"false",
+        "id":"c1f6a162-ee88-4ba9-a0cf-c525d8c52f71",
+        "userEmail":"saikrishnaganguri@gmail.com"
+    },
+    {
+        "name":"Write Followup Email for AWS",
+        "checked":"false",
+        "id":"eb16df28-a6b5-4861-9aec-2ec6b9a8d0c3",
+        "userEmail":"saikrishnaganguri@gmail.com"
+    },
+    {
+        "name":"Write Followup Email for Sikka",
+        "checked":"false",
+        "id":"dcb42804-bb4a-4966-a11a-14cc345bd827",
+        "userEmail":"saikrishnaganguri@gmail.com"
+    },
+    {
+        "name":"Apply to NIVIDA",
+        "checked":"true",
+        "id":"9ca94fea-a5d4-43da-993f-298038e7b1e6",
+        "userEmail":"saikrishnaganguri@gmail.com"
+    },
+    {
+        "name":"Apply to workday",
+        "checked":"true",
+        "id":"d0f382f0-4e6b-4905-8a1f-e79c1f75d925",
+        "userEmail":"madala.anjala@gmail.com"
+    }
+]
