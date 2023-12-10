@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "cloudproject8937c62b_identitypool_8937c62b",
+    "identityPoolName": "cloudprojectfdb777f7_identitypool_fdb777f7",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "cloudp8937c62b",
-    "userPoolName": "cloudproject8937c62b_userpool_8937c62b",
+    "resourceNameTruncated": "cloudpfdb777f7",
+    "userPoolName": "cloudprojectfdb777f7_userpool_fdb777f7",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -14,7 +14,7 @@
     ],
     "smsAuthenticationMessage": "Your authentication code is {####}",
     "smsVerificationMessage": "Your verification code is {####}",
-    "emailVerificationSubject": "Your verification code",
+    "emailVerificationSubject": "Check your email for Verification code.",
     "emailVerificationMessage": "Your verification code is {####}",
     "defaultPasswordPolicy": false,
     "passwordPolicyMinLength": 8,
@@ -31,18 +31,42 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "cloudp8937c62b_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "cloudpfdb777f7_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "8937c62b",
-    "resourceName": "cloudproject8937c62b",
+    "sharedId": "fdb777f7",
+    "resourceName": "cloudprojectfdb777f7",
     "authSelections": "identityPoolAndUserPool",
-    "useDefault": "default",
+    "useDefault": "manual",
     "usernameAttributes": [
-      "email, phone_number"
+      "email"
     ],
+    "triggers": {},
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
-    "useEnabledMfas": true
+    "useEnabledMfas": true,
+    "authRoleArn": {
+      "Fn::GetAtt": [
+        "AuthRole",
+        "Arn"
+      ]
+    },
+    "unauthRoleArn": {
+      "Fn::GetAtt": [
+        "UnauthRole",
+        "Arn"
+      ]
+    },
+    "breakCircularDependency": true,
+    "dependsOn": [],
+    "thirdPartyAuth": false,
+    "userPoolGroups": false,
+    "adminQueries": false,
+    "hostedUI": false,
+    "authProviders": [],
+    "parentStack": {
+      "Ref": "AWS::StackId"
+    },
+    "permissions": []
   }
 }

@@ -39,7 +39,7 @@ export default class PendingTodo extends React.Component{
 
     }
     async getToDo(){
-        await fetch("https://6hjw1m5p7l.execute-api.us-west-1.amazonaws.com/Production/todo/false/"+this.props.user.attributes.email).
+        await fetch("https://kbv2lyg353.execute-api.us-west-1.amazonaws.com/Production/todo/false/"+this.props.user.attributes.email).
         then((res)=>res.json())
         .then((data)=>{ this.setState({
             todoList:data!=undefined?data:[],
@@ -62,7 +62,7 @@ export default class PendingTodo extends React.Component{
         })
       }
       async updateTodo(item){
-       await fetch("https://6hjw1m5p7l.execute-api.us-west-1.amazonaws.com/Production/todo",{
+       await fetch("https://kbv2lyg353.execute-api.us-west-1.amazonaws.com/Production/todo",{
             method:'PUT', 
             headers: {
               'Content-Type': 'application/json',

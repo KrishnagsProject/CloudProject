@@ -35,7 +35,7 @@ export default class AddToDo extends React.Component{
     }
 
     async addToDo(){
-        await fetch("https://6hjw1m5p7l.execute-api.us-west-1.amazonaws.com/Production/todo",{
+        await fetch("https://kbv2lyg353.execute-api.us-west-1.amazonaws.com/Production/todo",{
             method:'PUT', 
             headers: {
               'Content-Type': 'application/json',

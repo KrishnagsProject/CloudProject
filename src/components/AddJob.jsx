@@ -122,7 +122,7 @@ constructor(props){
         description:"",
         id:this.unique_id.toString()
     })
-        await fetch("https://xrz0f1xcc1.execute-api.us-west-1.amazonaws.com/Production/jobs",{
+        await fetch("https://kbv2lyg353.execute-api.us-west-1.amazonaws.com/Production/jobs",{
             method:'PUT', 
             headers: {
               'Content-Type': 'application/json',

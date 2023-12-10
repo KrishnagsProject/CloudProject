@@ -134,7 +134,7 @@ export default class AppliedJobs extends React.Component{
     this.deleteJob=this.deleteJob.bind(this);
      }
     async getJobs(){
-      await fetch("https://xrz0f1xcc1.execute-api.us-west-1.amazonaws.com/Production/jobs/"+this.props.user.attributes.email).
+      await fetch("https://kbv2lyg353.execute-api.us-west-1.amazonaws.com/Production/jobs/"+this.props.user.attributes.email).
       then((res)=>res.json())
       .then((data)=>{ this.setState({
         items:data!=undefined?data:[],
@@ -296,7 +296,7 @@ export default class AppliedJobs extends React.Component{
       this.setState({
         isShowingJobDetails:false
       })
-      await fetch("https://xrz0f1xcc1.execute-api.us-west-1.amazonaws.com/Production/jobs",{
+      await fetch("https://kbv2lyg353.execute-api.us-west-1.amazonaws.com/Production/jobs",{
         method:'PUT', 
         headers: {
           'Content-Type': 'application/json',
@@ -317,7 +317,7 @@ export default class AppliedJobs extends React.Component{
         isShowingJobDetails:false,
         isLoading:true
       })
-      await fetch("https://xrz0f1xcc1.execute-api.us-west-1.amazonaws.com/Production/job",{
+      await fetch("https://kbv2lyg353.execute-api.us-west-1.amazonaws.com/Production/job/",{
         method:'DELETE', 
         headers: {
           'Content-Type': 'application/json',

@@ -3,14 +3,13 @@
 
 const awsmobile = {
     "aws_project_region": "us-west-1",
-    "aws_cognito_identity_pool_id": "us-west-1:93785d68-78f7-472b-b045-6cd2aa43b3d3",
+    "aws_cognito_identity_pool_id": "us-west-1:c94d5154-cf43-4d6e-a266-786ec0f1f4fe",
     "aws_cognito_region": "us-west-1",
-    "aws_user_pools_id": "us-west-1_qURZTIUSf",
-    "aws_user_pools_web_client_id": "14e68r0kramujjpn54pb09tsqo",
+    "aws_user_pools_id": "us-west-1_uqCVI4bAM",
+    "aws_user_pools_web_client_id": "7pdc3opf2vcucrvfa1p8fd1aru",
     "oauth": {},
     "aws_cognito_username_attributes": [
-        "EMAIL",
-        "PHONE_NUMBER"
+        "EMAIL"
     ],
     "aws_cognito_social_providers": [],
     "aws_cognito_signup_attributes": [
