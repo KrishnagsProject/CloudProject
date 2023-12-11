@@ -301,7 +301,6 @@ export default class AppliedJobs extends React.Component{
         isShowingJobDetails:false,
         job:tempJob
       },async ()=>{
-        console.log(this.state.job)
         await fetch("https://kbv2lyg353.execute-api.us-west-1.amazonaws.com/Production/jobs",{
         method:'PUT', 
         headers: {

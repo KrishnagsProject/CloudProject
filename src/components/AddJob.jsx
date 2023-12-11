@@ -110,7 +110,6 @@ constructor(props){
     }
 
    async addJob(){
-        console.log(this.state)
         await fetch("https://kbv2lyg353.execute-api.us-west-1.amazonaws.com/Production/jobs",{
             method:'PUT', 
             headers: {
