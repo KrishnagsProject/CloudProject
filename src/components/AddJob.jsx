@@ -110,20 +110,7 @@ constructor(props){
     }
 
    async addJob(){
-    this.setState({
-        companyName:"",
-        role:"",
-        location:"",
-        status:"",
-        links:"",
-        userEmail:this.props.user.attributes.email,
-        modifiedDate:new Date().toDateString(),
-        appliedDate:"",
-        notes:"",
-        description:"",
-        id:this.unique_id.toString(),
-        active:true
-    })
+    
         await fetch("https://kbv2lyg353.execute-api.us-west-1.amazonaws.com/Production/jobs",{
             method:'PUT', 
             headers: {
@@ -136,7 +123,20 @@ constructor(props){
         }).
         then((res)=>res.json())
         .then((data)=>{
-            
+            this.setState({
+                companyName:"",
+                role:"",
+                location:"",
+                status:"",
+                links:"",
+                userEmail:this.props.user.attributes.email,
+                modifiedDate:new Date().toDateString(),
+                appliedDate:"",
+                notes:"",
+                description:"",
+                id:this.unique_id.toString(),
+                active:true
+            })
         })
     }
 }
