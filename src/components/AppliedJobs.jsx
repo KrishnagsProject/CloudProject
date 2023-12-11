@@ -296,11 +296,13 @@ export default class AppliedJobs extends React.Component{
    async updateJob(){
     let tempJob=this.state.job
       tempJob.active=true
+
       this.setState({
         isShowingJobDetails:false,
         job:tempJob
-      })
-      await fetch("https://kbv2lyg353.execute-api.us-west-1.amazonaws.com/Production/jobs",{
+      },async ()=>{
+        console.log(this.state.job)
+        await fetch("https://kbv2lyg353.execute-api.us-west-1.amazonaws.com/Production/jobs",{
         method:'PUT', 
         headers: {
           'Content-Type': 'application/json',
@@ -314,6 +316,8 @@ export default class AppliedJobs extends React.Component{
     .then((data)=>
        {}
     )
+      })
+    
     }
 
     async deleteJob(){
