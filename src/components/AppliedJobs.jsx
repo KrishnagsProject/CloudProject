@@ -295,7 +295,7 @@ export default class AppliedJobs extends React.Component{
     }
    async updateJob(){
     let tempJob=this.state.job
-      tempJob.active=active
+      tempJob.active=true
       this.setState({
         isShowingJobDetails:false,
         job:tempJob
