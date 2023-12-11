@@ -121,7 +121,8 @@ constructor(props){
         appliedDate:"",
         notes:"",
         description:"",
-        id:this.unique_id.toString()
+        id:this.unique_id.toString(),
+        active:true
     })
         await fetch("https://kbv2lyg353.execute-api.us-west-1.amazonaws.com/Production/jobs",{
             method:'PUT', 

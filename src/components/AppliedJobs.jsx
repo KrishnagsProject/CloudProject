@@ -309,7 +309,7 @@ export default class AppliedJobs extends React.Component{
     }).
     then((res)=>res.json())
     .then((data)=>
-        this.getJobs()
+       {}
     )
     }
 
