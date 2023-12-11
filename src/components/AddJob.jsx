@@ -37,7 +37,8 @@ constructor(props){
         appliedDate:"",
         notes:"",
         description:"",
-        id:this.unique_id.toString()
+        id:this.unique_id.toString(),
+        active:true
     }
     this.addJob=this.addJob.bind(this);
 }

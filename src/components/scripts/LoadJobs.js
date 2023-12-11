@@ -25,7 +25,8 @@ var jobsData =
         "appliedDate":job.appliedDate,
         "notes":job.notes,
         "description":job.description,
-        "id":job.id
+        "id":job.id,
+        "active":job.active
     }
   };
 

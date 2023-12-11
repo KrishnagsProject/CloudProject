@@ -125,7 +125,8 @@ export default class AppliedJobs extends React.Component{
             appliedDate:"",
             notes:"",
             description:"",
-            id:""
+            id:"",
+            active:true
           }
       }
     this.getJobs()
@@ -307,18 +308,19 @@ export default class AppliedJobs extends React.Component{
         body:JSON.stringify(this.state.job)
     }).
     then((res)=>res.json())
-    .then((data)=>{
-        
-    })
+    .then((data)=>
+        this.getJobs()
+    )
     }
 
     async deleteJob(){
       this.setState({
         isShowingJobDetails:false,
-        isLoading:true
+        isLoading:true,
+        active:false
       })
-      await fetch("https://kbv2lyg353.execute-api.us-west-1.amazonaws.com/Production/job/",{
-        method:'DELETE', 
+      await fetch("https://kbv2lyg353.execute-api.us-west-1.amazonaws.com/Production/jobs",{
+        method:'PUT', 
         headers: {
           'Content-Type': 'application/json',
           'Access-Control-Allow-Origin':'*',
@@ -328,6 +330,8 @@ export default class AppliedJobs extends React.Component{
         body:JSON.stringify(this.state.job)
     }).
     then((res)=>res.json())
-    .then((data)=>this.getJobs())
+    .then((data)=>
+        this.getJobs()
+    )
     }
 }
