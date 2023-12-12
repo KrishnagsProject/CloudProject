@@ -16,7 +16,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #3a8b35;
   display: flex;
   flex-direction: row;
   color: white;
@@ -99,7 +99,7 @@ margin-top: 10px;
 
 .header-title{
   text-align: center;
-  width: 75%;
+  width: 90%;
   font-family: serif;
 }
 
@@ -116,3 +116,20 @@ margin-top: 10px;
 .ms-List-cell:hover {
   cursor: pointer;
 }
+
+.amplify-button--fullwidth {
+  background-color: #90e046 !important;
+}
+
+.amplify-button--link {
+  color: #3f671d !important;
+}
+
+.amplify-tabs-item:focus, .amplify-tabs-item:active,.amplify-tabs-item:hover, .amplify-tabs-item[data-state="active"] {
+  color: #418208 !important;
+  border-color: #418208 !important;
+}
+
+ .amplify-tabs-item[data-state="inactive"]{
+  color: #418208 !important;
+ }
